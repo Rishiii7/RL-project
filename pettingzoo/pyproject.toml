@@ -1,0 +1,24 @@
+[tool.pyright]
+
+# add any files/directories with type declaration to include
+include = [
+    "pettingzoo/",
+]
+exclude = [
+    "pettingzoo/atari/",
+    "pettingzoo/butterfly/",
+    "pettingzoo/classic/",
+    "pettingzoo/mpe/",
+    "pettingzoo/sisl/",
+    "pettingzoo/test/",
+]
+strict = [
+]
+verboseOutput = true
+typeCheckingMode = "basic"
+reportMissingImports = false
+
+[tool.pytest.ini_options]
+norecursedirs = [
+    "pettingzoo"
+]
